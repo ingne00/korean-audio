@@ -16,7 +16,7 @@ border-radius:10px;background:#f7fafb;text-decoration:none;color:#13294b}</style
 function mark(b){if(btn)btn.classList.remove('on');btn=b;if(b)b.classList.add('on');}
 function stop(){q=[];a.pause();mark(null);if(all){all.classList.remove('on');all.textContent=label;}}
 function next(){if(q.length){play(q.shift());}else{stop();}}
-function play(b){mark(b);a.src=b.getAttribute('data-src');var p=a.play();if(p&&p.catch)p.catch(function(){if(q.length)next();else mark(null);});}
+function play(b){mark(b);a.src=b.getAttribute('data-src');var p=a.play();if(p&&p.catch)p.catch(function(){});}
 a.addEventListener('ended',next);a.addEventListener('error',function(){if(q.length)next();else mark(null);});
 document.querySelectorAll('button.p').forEach(function(b){b.addEventListener('click',function(){
 if(btn===b&&!a.paused){stop();return;}q=[];if(all){all.classList.remove('on');all.textContent=label;}play(b);});});
