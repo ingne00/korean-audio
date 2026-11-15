@@ -1,0 +1,21 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Noryangjin</title><style>*{box-sizing:border-box}body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,"Noto Sans KR","Malgun Gothic",sans-serif;background:#fff;color:#111}
+main{max-width:640px;margin:0 auto;padding:16px}
+.top{font-size:13px;color:#666}h1{font-size:21px;margin:4px 0 12px}
+.all{display:block;width:100%;border:0;border-radius:20px;background:#c8312f;color:#fff;font-size:16px;padding:10px;margin-bottom:10px}
+.row{border-left:3px solid #2b6777;background:#f7fafb;padding:8px 10px;margin:10px 0}
+.ko{font-size:21px;font-weight:bold;line-height:1.35}.rr{color:#2b6777;font-size:14px}.en{font-size:14px;color:#444}
+.btns{margin-top:6px;display:flex;gap:8px}
+button.p{border:1px solid #2b6777;border-radius:16px;background:#fff;color:#2b6777;font-size:15px;padding:6px 14px}
+button.p.n{background:#2b6777;color:#fff}button.on{outline:3px solid #f0b400}
+ul.list{padding-left:18px}ul.list li{margin:8px 0;font-size:16px}a{color:#1f5866}
+footer{font-size:12px;color:#666;margin:24px 0 8px}
+h2{font-size:18px;margin:22px 0 6px}
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.grid a{display:block;text-align:center;font-size:26px;font-weight:bold;padding:12px 0;border:1px solid #2b6777;
+border-radius:10px;background:#f7fafb;text-decoration:none;color:#13294b}</style></head><body><main><div class="top"><a href="./">Book 3: Seoul by Subway</a> · Station 26</div><h1>Noryangjin</h1><button class="all">▶ Play all (normal → slow)</button><div class="row"><div class="ko" lang="ko">노량진역</div><div class="rr">Noryangjin Station</div><div class="en"></div><div class="btns"><button class="p n" data-src="../mp3/819121d1eb8a.mp3">▶ Normal</button><button class="p s" data-src="../mp3/0e91df6c34fd.mp3">🐢 Slow</button></div></div><div class="row"><div class="ko" lang="ko">노량진수산물도매시장</div><div class="rr">Noryangjin Fisheries Wholesale Market</div><div class="en"></div><div class="btns"><button class="p n" data-src="../mp3/62f8349a56e9.mp3">▶ Normal</button><button class="p s" data-src="../mp3/c3cec8505fe8.mp3">🐢 Slow</button></div></div><div class="row"><div class="ko" lang="ko">사육신역사공원</div><div class="rr">Sayuksin Historical Park and History Hall</div><div class="en"></div><div class="btns"><button class="p n" data-src="../mp3/b4b31541a064.mp3">▶ Normal</button><button class="p s" data-src="../mp3/c261765b9711.mp3">🐢 Slow</button></div></div><div class="row"><div class="ko" lang="ko">노량진 컵밥거리</div><div class="rr">Noryangjin Cup Rice Street</div><div class="en"></div><div class="btns"><button class="p n" data-src="../mp3/f4249aa93a1c.mp3">▶ Normal</button><button class="p s" data-src="../mp3/92b70862ec5f.mp3">🐢 Slow</button></div></div><footer>Audio generated with an AI voice (Microsoft Azure text-to-speech), not a human recording.</footer></main><script>(function(){var a=new Audio(),q=[],btn=null;
+function mark(b){if(btn)btn.classList.remove('on');btn=b;if(b)b.classList.add('on');}
+function play(b){mark(b);a.src=b.getAttribute('data-src');a.play();}
+a.addEventListener('ended',function(){if(q.length){play(q.shift());}else{mark(null);}});
+document.querySelectorAll('button.p').forEach(function(b){b.addEventListener('click',function(){q=[];play(b);});});
+var all=document.querySelector('button.all');if(all)all.addEventListener('click',function(){
+q=Array.prototype.slice.call(document.querySelectorAll('button.p'));if(q.length)play(q.shift());});})();</script></body></html>
